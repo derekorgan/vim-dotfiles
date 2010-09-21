@@ -24,7 +24,6 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set undofile
 
 let mapleader = ","
 nmap <leader>v :tabedit $MYVIMRC<CR>
@@ -51,7 +50,6 @@ vnoremap <tab> %
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
 
 " Source the vimrc file after saving it
 if has("autocmd")
