@@ -2,13 +2,19 @@ filetype off
 filetype plugin indent on
 
 set nocompatible
-
+set nu
 set modelines=0
 
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 set encoding=utf-8
 set scrolloff=3
@@ -33,8 +39,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-
-
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
@@ -58,7 +62,11 @@ endif
 
 nnoremap ; :
 
+
+let &t_Co=256
 colorscheme molokai
+
+syntax enable
 
 call pathogen#runtime_append_all_bundles()
 
