@@ -1,1 +1,11 @@
 Derek Organ Vim Dotfiles... very early days on learning this stuff.
+
+I've installed pathogen so all plugins are auto loaded from the bundle folder.
+
+INSTALL
+
+1. clone git@github.com:derekorgan/vim-dotfiles.git
+2. symlink .vimrc and .gvimrc 
+
+# ln -nfs ~/.vim/gvimrc ~/.gvimrc 
+# ln -nfs ~/.vim/vimrc ~/.vimrc 
