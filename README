@@ -4,8 +4,11 @@ I've installed pathogen so all plugins are auto loaded from the bundle folder.
 
 INSTALL
 
-1. clone git@github.com:derekorgan/vim-dotfiles.git
-2. symlink .vimrc and .gvimrc 
+1. cd ~
+2. git clone git@github.com:derekorgan/vim-dotfiles.git .vim
+3. ln -nfs ~/.vim/vimrc ~/.vimrc
 
-# ln -nfs ~/.vim/gvimrc ~/.gvimrc 
-# ln -nfs ~/.vim/vimrc ~/.vimrc 
+optional: ln -nfs ~/.vim/gvimrc ~/.gvimrc 
+
+
+
